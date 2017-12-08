@@ -9,11 +9,11 @@ void draw()
   pushMatrix();
     background(0);
 
-  rotateY(PI * frameCount / 300);
-  translate(500, height*0.35, -200);
+  translate(200, 200, 100);
+  rotateY(float(frameCount)/200);
   noFill();
   stroke(255);
-  sphere(150);
+  sphere(100);
   popMatrix();
   
   
