@@ -1,12 +1,20 @@
 void setup()
 {
-  size(500,500);
-  //First git commit on assignment
+  size(700,700,P3D);
+  background(0);
 }
 
 void draw()
 {
-  background(0); 
+  pushMatrix();
+    background(0);
+
+  rotateY(PI * frameCount / 300);
+  translate(500, height*0.35, -200);
+  noFill();
+  stroke(255);
+  sphere(150);
+  popMatrix();
   
   
 }
