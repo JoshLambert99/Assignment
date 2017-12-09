@@ -7,6 +7,7 @@ void setup()
 void draw()
 {
   pushMatrix();
+  background(0);
 
   translate(100, 100, -100);
   rotateY(float(frameCount)/200);
@@ -20,14 +21,12 @@ void draw()
   float ypos = 600;
   float xwidth = 25;
   float xheight = -100;
-  wwwww
   for(int i=0; i<500; i+=50)
   {
       float scale = random(-50, 50);
     
       rect(xpos + i, ypos, xwidth, xheight - scale);
-      
-
+    
   }
   
   
