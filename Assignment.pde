@@ -17,11 +17,11 @@ void draw()
   sphere(100);
   popMatrix();
   
-  float xpos = 50;
+  float xpos = 300;
   float ypos = 600;
   float xwidth = 25;
   float xheight = -100;
-  for(int i=0; i<500; i+=50)
+  for(int i=0; i<400; i+=50)
   {
       float scale = random(-50, 50);
     
