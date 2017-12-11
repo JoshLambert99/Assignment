@@ -38,5 +38,9 @@ class Radar
       float y = cy -cos(theta + i * speed) * radius;
       line(cx, cy, x, y);
     }
+    
+    textSize(16);
+    fill(0,255,0);
+    text("Scanner", 125, 600);
   }
 }

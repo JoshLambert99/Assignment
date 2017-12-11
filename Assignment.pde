@@ -15,6 +15,7 @@ void setup()
   */
 }
 Radar radar1;
+
 Sphere sphere1;
 
 float radius = 75;
@@ -53,6 +54,7 @@ void draw()
   
   Window();
   data();
+  button();
   
 
  /* for(int i = 0; i < planet.length; i++)
@@ -72,9 +74,21 @@ void Window()
 
 void data()
 {
+  rect(50, 300, 200, 100); 
   textSize(16);
-  //fill(0,255,0);
+  fill(0,255,0);
   text("Control Box", 50, 290);
+ 
+}
+
+void button()
+{
+  noFill();
+  rect(70, 310, 25, 35);
+  rect(70, 350, 25, 35);
+  ellipse(170, 325, 100,25);
+  ellipse(170, 370, 100,25);
+
   
-   rect(50, 300, 200, 100); 
+    
 }
