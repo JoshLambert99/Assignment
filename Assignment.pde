@@ -2,9 +2,9 @@
 void setup()
 {
   size(800,700,P3D);
-  radar1 = new Radar(150, 510, 60, 0.5, color(0, 255, 0));
+  radar1 = new Radar(150, 510, 60, 0.5, color(66, 244, 223));
 
-  sphere1 = new Sphere(100,100, 100, color(0, 255, 0));
+  sphere1 = new Sphere(100,100, 100, color(66, 244, 223));
 
  
 }
@@ -18,6 +18,9 @@ void draw()
 {
   background(0);
   
+  rect(10,10, 780, 680);
+
+  
   barchart(); //<>//
     
   //radar
@@ -29,8 +32,7 @@ void draw()
   data();
   button();
   barchart();
-  
-  
+  planet(); 
  
 }
 
@@ -44,7 +46,7 @@ void data()
 {
   rect(50, 300, 200, 100); 
   textSize(16);
-  fill(0,255,0);
+  fill(66, 244, 223);
   text("Control Box", 50, 290);
  
 }
@@ -62,7 +64,7 @@ void barchart()
 {
   //barchart
   textSize(16);
-  fill(0,255,0);
+  fill(66, 244, 223);
   text("Activity Diagnostics", 300, 435);
   
   noFill();
@@ -81,4 +83,15 @@ void barchart()
   rect(300, 610, 445, -170);
   
   //finished barchart
+}
+
+void planet()
+{
+  fill(0,0,255);
+  stroke(0,0,255);
+    arc(750,350, 450,450,PI,PI+ HALF_PI);
+
+    noFill();
+  
+
 }

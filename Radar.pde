@@ -26,7 +26,7 @@ class Radar
   
   void render()
   {
-    stroke(0, 255, 0);
+    stroke(66, 244, 223);
     noFill();
     ellipse(cx, cy, radius * 2, radius * 2);
         ellipse(cx, cy, radius * 1.5, radius * 1.5);
@@ -36,10 +36,10 @@ class Radar
 
 
     int trailLength = 10;
-    float greenIntensity = 255 / (float)trailLength;
+    float Intensity = 255 / (float)trailLength;
     for(int i = 0 ; i < trailLength ; i ++)
     {
-      stroke(0, i * greenIntensity, 0);
+      stroke(28, 170,i * Intensity);
       float x = cx + sin(theta + i * speed) * radius;
       float y = cy -cos(theta + i * speed) * radius;
       line(cx, cy, x, y);
@@ -52,7 +52,7 @@ class Radar
     
 
     textSize(16);
-    fill(0,255,0);
+    fill(66, 244, 223);
     text("Scanner", 125, 600);
   }
 }
