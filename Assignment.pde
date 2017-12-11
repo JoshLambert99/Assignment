@@ -33,7 +33,7 @@ void draw()
   button();
   barchart();
   planet(); 
- 
+line(pmouseX, pmouseY, mouseX, mouseY);
 }
 
 void Window()
@@ -93,20 +93,29 @@ void planet()
   arc(750,350, 450,450,PI,PI+ HALF_PI);
   noFill();
   
- /* beginShape();
-  vertex(550,100);
-  vertex(600,150);
-  vertex(590,200);
-  vertex(560,250);
-  vertex(540,300);
-  vertex(515,290);
-  vertex(500,260);
-  vertex(490,240);
-  vertex(520,220);
-  vertex(520,125);
+  beginShape();
+  stroke(0,255,0);
+  fill(70,255,80);
+  vertex(670,150);
+  vertex(700,175);
+  vertex(700,200);
+  vertex(680,250);
+  vertex(660,300);
+  vertex(634,290);
+  vertex(600,260);
+  vertex(590,240);
+  vertex(610,220);
+  vertex(670,150);
   endShape();
-*/
+    noFill();
+
+
 
   
 
+}
+
+void mousePressed()
+{
+  background(50);
 }
