@@ -7,6 +7,8 @@ void setup()
 }
 Radar radar1;
 
+float radius = 75;
+
 void draw()
 {
   // rotating sphere
@@ -47,6 +49,13 @@ void draw()
   //radar
   radar1.render();
   radar1.update();
+
+
+  ellipse(600, 150,  radius*2, radius*2);
+  fill(255);
+
+  ellipse(600, 150,  radius, radius);
+  
 
   
   
