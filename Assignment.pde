@@ -32,8 +32,8 @@ void draw()
   data();
   button();
   barchart();
-  planet(); 
-line(pmouseX, pmouseY, mouseX, mouseY);
+  planet();
+  stars();
 }
 
 void Window()
@@ -100,22 +100,32 @@ void planet()
   vertex(700,175);
   vertex(700,200);
   vertex(680,250);
-  vertex(660,300);
-  vertex(634,290);
-  vertex(600,260);
-  vertex(590,240);
+  vertex(630,300);
+  vertex(614,290);
+  vertex(608,260);
+  vertex(586,240);
   vertex(610,220);
+  vertex(630,215);
+  vertex(646,190);
+  vertex(656,167);
   vertex(670,150);
+
   endShape();
     noFill();
 
-
-
-  
-
 }
 
-void mousePressed()
+void stars()
 {
-  background(50);
+   fill(255);
+   stroke(255);
+   ellipse(350, 68, 8,8);
+   ellipse(370, 168, 8,8); 
+   ellipse(390, 98, 8,8); 
+   ellipse(431, 268, 8,8); 
+   ellipse(420, 338, 8,8); 
+   ellipse(400,87, 8,8); 
+
+  noFill();
+  
 }
