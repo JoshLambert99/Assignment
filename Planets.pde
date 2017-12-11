@@ -7,7 +7,7 @@ class Planets
     
   Planets()
   {
-    x = random(320,700);
+    x = random(310,700);
     y = random(70,260);
      
       
@@ -22,9 +22,10 @@ class Planets
   void render()
   {
     fill(random(0, 255), random(0, 255), random(0, 255));
-     noStroke();
+    noStroke();
 
-     ellipse(x,y,50,50);
+        ellipse(x+ i,y,50,50);
+          
   }
   
   
