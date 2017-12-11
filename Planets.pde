@@ -24,7 +24,7 @@ class Planets
     fill(random(0, 255), random(0, 255), random(0, 255));
     noStroke();
 
-        ellipse(x+ i,y,50,50);
+        ellipse(x,y,50,50);
           
   }
   

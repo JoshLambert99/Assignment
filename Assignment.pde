@@ -1,4 +1,4 @@
-Planets[] planet = new Planets[9];
+//Planets[] planet = new Planets[9];
 
 
 void setup()
@@ -7,10 +7,11 @@ void setup()
   radar1 = new Radar(150, 510, 60, 0.5, color(0, 255, 0));
 
   
-  for(int i = 0; i < planet.length; i++)
+ /* for(int i = 0; i < planet.length; i++)
   {
      planet[i] = new Planets();  
   }
+  */
 }
 Radar radar1;
 
@@ -61,12 +62,12 @@ void draw()
   data();
   
 
-  for(int i = 0; i < planet.length; i++)
+ /* for(int i = 0; i < planet.length; i++)
   {
      planet[i].update(); 
      planet[i].render();
   }
-  
+  */
   
  
 }
