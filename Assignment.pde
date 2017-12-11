@@ -1,25 +1,28 @@
+Planets[] planet = new Planets[9];
+
+
 void setup()
 {
   size(800,700,P3D);
   radar1 = new Radar(150, 510, 60, 0.5, color(0, 255, 0));
-  
-  back = loadImage("planet.jpg");
 
+  
+  for(int i = 0; i < planet.length; i++)
+  {
+     planet[i] = new Planets();  
+  }
 }
 Radar radar1;
 
 float radius = 75;
-PImage back;
-
-
 
 void draw()
 {
-  
+ background(0);
+   
      
   // rotating sphere
   pushMatrix();
-  background(10);
   translate(100, 100, -100);
   rotateY(float(frameCount)/200);
   fill(0);
@@ -53,14 +56,17 @@ void draw()
   //radar
   radar1.render();
   radar1.update();
-
-
-  /*ellipse(600, 150,  radius*2, radius*2);
-  fill(255);
-
-  ellipse(600, 150,  radius, radius);
-  */
+  
   Window();
+  data();
+  
+
+  for(int i = 0; i < planet.length; i++)
+  {
+     planet[i].update(); 
+     planet[i].render();
+  }
+  
   
  
 }
@@ -68,5 +74,9 @@ void draw()
 void Window()
 {
    rect(300,50, 450, 300);
-   image(back,300,50, 450, 300);   
+}
+
+void data()
+{
+   rect(50, 300, 200, 100); 
 }
