@@ -1,5 +1,4 @@
 
-
 void setup()
 {
   size(800,700,P3D);
@@ -25,26 +24,19 @@ void draw()
   radar1.render();
   radar1.update();
   
-  sphere1.display();
-  
+  sphere1.display();  
   Window();
   data();
   button();
   barchart();
   
-
- /* for(int i = 0; i < planet.length; i++)
-  {
-     planet[i].update(); 
-     planet[i].render();
-  }
-  */
   
  
 }
 
 void Window()
 {
+  noFill();
    rect(300,50, 450, 300);
 }
 

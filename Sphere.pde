@@ -23,9 +23,8 @@ class Sphere {
       stroke(c);
       sphere(size);
       popMatrix();
-      
+
     }
-  
-  
+
   
 }

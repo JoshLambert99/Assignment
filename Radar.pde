@@ -49,6 +49,7 @@ class Radar
     ellipse(175, 500, 5,5);
     ellipse(150, 540, 10,10);
     ellipse(185, 515, 15,15);
+    
 
     textSize(16);
     fill(0,255,0);
