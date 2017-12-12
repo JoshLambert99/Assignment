@@ -1,3 +1,5 @@
+Star[] stars = new Star[100];
+
 
 void setup()
 {
@@ -6,7 +8,10 @@ void setup()
 
   sphere1 = new Sphere(100,100, 100, color(66, 244, 223), speed);
 
-
+  for(int i = 0; i < stars.length; i++)
+  {
+     stars[i] = new Star(); 
+  }
  
 }
 Radar radar1;
@@ -19,6 +24,13 @@ float speed = 200;
 void draw()
 {
   background(0);
+  
+  for(int i = 0; i < stars.length; i++)
+  {
+     stars[i].update();
+     stars[i].render();
+  }
+ 
   
   strokeWeight(10);
   rect(10,10, 780, 680);
@@ -40,8 +52,10 @@ void draw()
   button();
   barchart();
   
+  stroke(255,0,0);
   ellipse(mouseX, mouseY, 10,10);
   ellipse(mouseX,mouseY, 15,15);
+  stroke(66, 244, 223);
   
   //shoot();
   //stars();
@@ -105,11 +119,16 @@ void barchart()
   //finished barchart
 }
 
-void mousePressed()
+void keyPressed()
 {
-  strokeWeight(10);
-  line(550,300, pmouseX, pmouseY); 
-  strokeWeight(1);
+  if(key == 'w')
+  {
+     strokeWeight(10);
+     line(550,300, mouseX, mouseY); 
+     strokeWeight(1);
+    
+  }
+ 
   /*fill(0,0,255);
   stroke(0,0,255);
   arc(750,350, 450,450,PI,PI+ HALF_PI);
