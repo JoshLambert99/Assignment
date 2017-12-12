@@ -4,7 +4,7 @@ void setup()
   size(800,700,P3D);
   radar1 = new Radar(150, 510, 60, 0.5, color(66, 244, 223));
 
-  sphere1 = new Sphere(100,100, 100, color(66, 244, 223));
+  sphere1 = new Sphere(100,100, 100, color(66, 244, 223), speed);
 
  
 }
@@ -13,6 +13,7 @@ Radar radar1;
 Sphere sphere1;
 
 float radius = 75;
+float speed = 200;
 
 void draw()
 {
@@ -26,8 +27,11 @@ void draw()
   //radar
   radar1.render();
   radar1.update();
+  radar1.keyPressed(); 
+
   
   sphere1.display();  
+  sphere1.keyPressed(); 
   Window();
   data();
   button();
@@ -54,7 +58,11 @@ void data()
 void button()
 {
   noFill();
+  textSize(16);
+  text("A", 78, 332);
   rect(70, 310, 25, 35);
+  textSize(16);
+  text("B", 78, 372);
   rect(70, 350, 25, 35);
   ellipse(170, 325, 100,25);
   ellipse(170, 370, 100,25);
@@ -129,3 +137,5 @@ void stars()
   noFill();
   
 }
+
+ 

@@ -55,4 +55,23 @@ class Radar
     fill(66, 244, 223);
     text("Scanner", 125, 600);
   }
+  
+  void keyPressed()
+     {
+        if(key == 'a')
+        {
+             theta = theta + speed - 50;
+             
+
+        } 
+        else if (key == 'b')
+        {
+             theta = theta + speed + 50;
+        }
+         else if(key == 's')
+         {
+             theta += speed;
+           
+         }
+     }
 }
