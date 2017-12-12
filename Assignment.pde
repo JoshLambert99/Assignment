@@ -141,35 +141,6 @@ void analyzer()
   fill(0);
   rect(50,100, 200,100);
   
-  /*beginShape();
-  vertex(50,150);
-  vertex(65,150);
-  vertex(80,125);
-  vertex(95,175);
-  vertex(100,150);
-  vertex(115,150);
-  vertex(120, 140);
-  vertex(136, 166);
-  vertex(140,117);
-  vertex(146, 187);
-  vertex(150,150);
-  vertex(160,150);
-  vertex(167,125);
-  vertex(173,175);
-  vertex(182,150);
-  vertex(185,150);
-  vertex(192, 140);
-  vertex(197, 166);
-  vertex(200,117);
-  vertex(206,150);
-  vertex(211,150);
-  vertex(219,125);
-  vertex(226,175);
-  vertex(234,150);
-  vertex(245,150);
-  vertex(247, 140);
-  vertex(250, 166);
-    endShape();*/
     
     beginShape();
     vertex(50, random(100,200));
