@@ -6,7 +6,7 @@ void setup()
   size(800,700,P3D);
   radar1 = new Radar(150, 510, 60, 0.5, color(66, 244, 223));
 
-  sphere1 = new Sphere(650,150, 100, color(0, 255, 0), speed);
+  sphere1 = new Sphere(650,150, 100, color(66, 244, 223), speed);
 
 
   for(int i = 0; i < stars.length; i++)
