@@ -6,21 +6,20 @@ class Star {
   Star() {
     x = random(0,width);
     y = random(0,height);
-    z = random(0,width);
     
  }
  
  
  void update()
  {
-   
-   
+     
  }
  
  void render()
  {
    fill(255);
    noStroke();
+   
    ellipse(x,y, 5,5);
    noFill();
  }
