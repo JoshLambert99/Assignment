@@ -52,6 +52,7 @@ void draw()
   data();
   button();
   barchart();
+  analyzer();
   
   stroke(255,0,0);
   ellipse(mouseX, mouseY, 10,10);
@@ -130,47 +131,75 @@ void keyPressed()
     
   }
  
-  /*fill(0,0,255);
-  stroke(0,0,255);
-  arc(750,350, 450,450,PI,PI+ HALF_PI);
-  noFill();
-  
-  beginShape();
-  stroke(0,255,0);
-  fill(70,255,80);
-  vertex(670,150);
-  vertex(700,175);
-  vertex(700,200);
-  vertex(680,250);
-  vertex(630,300);
-  vertex(614,290);
-  vertex(608,260);
-  vertex(586,240);
-  vertex(610,220);
-  vertex(630,215);
-  vertex(646,190);
-  vertex(656,167);
-  vertex(670,150);
 
-  endShape();
-    noFill();
-    */
 
 }
 
-/*void stars()
+void analyzer()
 {
-   fill(255);
-   stroke(255);
-   ellipse(350, 68, 8,8);
-   ellipse(370, 168, 8,8); 
-   ellipse(390, 98, 8,8); 
-   ellipse(431, 268, 8,8); 
-   ellipse(420, 338, 8,8); 
-   ellipse(400,87, 8,8); 
-
-  noFill();
+  text("Analyzer", 50, 90);
+  fill(0);
+  rect(50,100, 200,100);
   
-}*/
+  /*beginShape();
+  vertex(50,150);
+  vertex(65,150);
+  vertex(80,125);
+  vertex(95,175);
+  vertex(100,150);
+  vertex(115,150);
+  vertex(120, 140);
+  vertex(136, 166);
+  vertex(140,117);
+  vertex(146, 187);
+  vertex(150,150);
+  vertex(160,150);
+  vertex(167,125);
+  vertex(173,175);
+  vertex(182,150);
+  vertex(185,150);
+  vertex(192, 140);
+  vertex(197, 166);
+  vertex(200,117);
+  vertex(206,150);
+  vertex(211,150);
+  vertex(219,125);
+  vertex(226,175);
+  vertex(234,150);
+  vertex(245,150);
+  vertex(247, 140);
+  vertex(250, 166);
+    endShape();*/
+    
+    beginShape();
+    vertex(50, random(100,200));
+    vertex(58,random(100,200));
+    vertex(66, random(100,200));
+    vertex(78, random(100,200));
+    vertex(83, random(100,200));
+    vertex(89, random(100,200));
+    vertex(97, random(100,200));
+    vertex(110, random(100,200));
+    vertex(118, random(100,200));
+    vertex(125, random(100,200));
+    vertex(134, random(100,200));
+    vertex(144, random(100,200));
+    vertex(156, random(100,200));
+    vertex(158, random(100,200));
+    vertex(168, random(100,200));
+    vertex(180, random(100,200));
+    vertex(186, random(100,200));
+    vertex(194, random(100,200));
+    vertex(200, random(100,200));
+    vertex(208, random(100,200));
+    vertex(214, random(100,200));
+    vertex(219, random(100,200));
+    vertex(234, random(100,200));
+    vertex(245, random(100,200));
+    vertex(250, random(100,200));
+  endShape();  
+  
+  
+}
 
  
