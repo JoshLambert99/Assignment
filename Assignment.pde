@@ -6,6 +6,7 @@ void setup()
 
   sphere1 = new Sphere(100,100, 100, color(66, 244, 223), speed);
 
+
  
 }
 Radar radar1;
@@ -19,7 +20,9 @@ void draw()
 {
   background(0);
   
+  strokeWeight(10);
   rect(10,10, 780, 680);
+  strokeWeight(1);
 
   
   barchart(); //<>//
@@ -36,14 +39,20 @@ void draw()
   data();
   button();
   barchart();
-  planet();
-  stars();
+  
+  ellipse(mouseX, mouseY, 10,10);
+  ellipse(mouseX,mouseY, 15,15);
+  
+  //shoot();
+  //stars();
 }
 
 void Window()
 {
   noFill();
+  strokeWeight(7);
    rect(300,50, 450, 300);
+   strokeWeight(1);
 }
 
 void data()
@@ -64,8 +73,10 @@ void button()
   textSize(16);
   text("B", 78, 372);
   rect(70, 350, 25, 35);
+  fill(100, 11, 196);
   ellipse(170, 325, 100,25);
   ellipse(170, 370, 100,25);
+  noFill();
 }
 
 void barchart()
@@ -94,9 +105,12 @@ void barchart()
   //finished barchart
 }
 
-void planet()
+void mousePressed()
 {
-  fill(0,0,255);
+  strokeWeight(10);
+  line(550,300, pmouseX, pmouseY); 
+  strokeWeight(1);
+  /*fill(0,0,255);
   stroke(0,0,255);
   arc(750,350, 450,450,PI,PI+ HALF_PI);
   noFill();
@@ -120,10 +134,11 @@ void planet()
 
   endShape();
     noFill();
+    */
 
 }
 
-void stars()
+/*void stars()
 {
    fill(255);
    stroke(255);
@@ -136,6 +151,6 @@ void stars()
 
   noFill();
   
-}
+}*/
 
  
