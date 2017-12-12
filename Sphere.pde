@@ -43,10 +43,12 @@ class Sphere {
       pushMatrix();
       translate(xpos, ypos, -100);
       rotateY(float(frameCount)/speed);
-      fill(0);
+      fill(0,0,255);
       stroke(c);
       sphere(size);
+      noFill();
       popMatrix();
+      stroke(66, 244, 223);
 
     }
 
