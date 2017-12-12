@@ -19,4 +19,6 @@ I then added in the stars using an array and for loop to make it more visually a
 *Overall I'm proud of the sphere and the data analyzer.*
 
 ## Youtube Video of Assignment: 
+[![YouTube](https://www.youtube.com/watch?v=Ufp1o4d2SiA&feature=youtu.be](https://www.youtube.com/watch?v=Ufp1o4d2SiA&feature=youtu.be)
+
 
